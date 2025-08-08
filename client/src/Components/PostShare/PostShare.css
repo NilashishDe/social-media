@@ -1,0 +1,90 @@
+.PostShare{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--cardBg);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--cardShadow);
+    transition: all 0.3s ease;
+}
+
+.PostShare > img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.PostShare > div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+
+.PostShare > div > input {
+    background-color: var(--inputBg);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: var(--primaryText);
+    transition: all 0.3s ease;
+}
+
+.PostShare > div > input::placeholder {
+    color: var(--textMuted);
+}
+
+.postOptions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.option{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.option:hover{
+    cursor: pointer;
+    background-color: var(--inputBg);
+}
+
+.ps-button{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.previewImage{
+    position: relative;
+}
+
+.previewImage > svg{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+    color: var(--primaryText);
+    transition: color 0.3s ease;
+}
+
+.previewImage > svg:hover {
+    color: var(--purplePain);
+}
+
+.previewImage > img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

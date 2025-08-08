@@ -1,0 +1,126 @@
+/* Light Theme (Default) */
+:root {
+  /* Primary Colors */
+  --lightPurple: #b578ff;
+  --darkPurple: #6674cc;
+  --purplePain: #9615db;
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  
+  /* Text Colors */
+  --primaryText: #242d49;
+  --secondaryText: rgba(36, 45, 73, 0.65);
+  --textMuted: #666;
+  
+  /* Background Colors */
+  --primaryBg: #f3f3f3;
+  --secondaryBg: rgba(255, 255, 255, 0.64);
+  --cardBg: rgba(255, 255, 255, 0.64);
+  --inputBg: rgba(40, 52, 62, 0.07);
+  
+  /* Border and Shadow */
+  --borderColor: #cfcdcd;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --cardShadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Button Colors */
+  --buttonBg: linear-gradient(98.63deg, #6674cc 10%, #9615db 100%);
+  --buttonHoverBg: transparent;
+  --buttonHoverColor: #9615db;
+  --buttonHoverBorder: #9615db;
+  
+  /* Feature Colors */
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+  
+  /* Blur Effect */
+  --blurColor: #a6ddf0;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Primary Colors (same) */
+  --lightPurple: #b578ff;
+  --darkPurple: #6674cc;
+  --purplePain: #9615db;
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  
+  /* Text Colors */
+  --primaryText: #ffffff;
+  --secondaryText: rgba(255, 255, 255, 0.8);
+  --textMuted: #aaa;
+  
+  /* Background Colors */
+  --primaryBg: #1a1a1a;
+  --secondaryBg: rgba(255, 255, 255, 0.05);
+  --cardBg: rgba(255, 255, 255, 0.05);
+  --inputBg: rgba(255, 255, 255, 0.1);
+  
+  /* Border and Shadow */
+  --borderColor: #333;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.5);
+  --cardShadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  
+  /* Button Colors */
+  --buttonBg: linear-gradient(98.63deg, #6674cc 10%, #9615db 100%);
+  --buttonHoverBg: transparent;
+  --buttonHoverColor: #b578ff;
+  --buttonHoverBorder: #b578ff;
+  
+  /* Feature Colors (same) */
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+  
+  /* Blur Effect */
+  --blurColor: #2a2a2a;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--primaryText);
+  background: var(--primaryBg);
+  padding: 1rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: var(--blurColor);
+  filter: blur(72px);
+  transition: background 0.3s ease;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--buttonBg);
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  cursor: pointer;
+  background: var(--buttonHoverBg);
+  color: var(--buttonHoverColor);
+  border: 2px solid var(--buttonHoverBorder);
+}
+
+.button:disabled{
+  background: var(--textMuted);
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none; 
+}
